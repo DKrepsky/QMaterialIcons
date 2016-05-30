@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['icon',['icon',['../da/da0/a00009.html#af10d060029c6bbd604a4b320224d4d72',1,'mi']]],
+  ['image',['image',['../da/da0/a00009.html#af10d060029c6bbd604a4b320224d4d72a830c31e5f8fc62b02986a10b41c631b8',1,'mi']]],
+  ['image_5faspect_5fratio',['image_aspect_ratio',['../da/da0/a00009.html#af10d060029c6bbd604a4b320224d4d72a23c86403b747a93b720094ff09315f94',1,'mi']]],
+  ['import_5fcontacts',['import_contacts',['../da/da0/a00009.html#af10d060029c6bbd604a4b320224d4d72a8551dfdeb827fe8f7e8861bdbe7e42da',1,'mi']]],
+  ['import_5fexport',['import_export',['../da/da0/a00009.html#af10d060029c6bbd604a4b320224d4d72a4aeaac02e1e141a46e00c6b29fc7efb3',1,'mi']]],
+  ['important_5fdevices',['important_devices',['../da/da0/a00009.html#af10d060029c6bbd604a4b320224d4d72ae5d858290ccac2abad0407378804fd25',1,'mi']]],
+  ['inbox',['inbox',['../da/da0/a00009.html#af10d060029c6bbd604a4b320224d4d72ae5c0c30f916c2cd4e672825c99caa8c5',1,'mi']]],
+  ['indeterminate_5fcheck_5fbox',['indeterminate_check_box',['../da/da0/a00009.html#af10d060029c6bbd604a4b320224d4d72a08268bcb4f6f3d56425e6951ce01184f',1,'mi']]],
+  ['info',['info',['../da/da0/a00009.html#af10d060029c6bbd604a4b320224d4d72a5ecb8c7700dd0b322f75caac75df28e4',1,'mi']]],
+  ['info_5foutline',['info_outline',['../da/da0/a00009.html#af10d060029c6bbd604a4b320224d4d72a44de1d52fd1c8e31f7d209255e1ad161',1,'mi']]],
+  ['input',['input',['../da/da0/a00009.html#af10d060029c6bbd604a4b320224d4d72a22499b864d0d54bd2b1f3e2e904512d4',1,'mi']]],
+  ['insert_5fchart',['insert_chart',['../da/da0/a00009.html#af10d060029c6bbd604a4b320224d4d72ae7c7884a708b182d225bf126ac3ab594',1,'mi']]],
+  ['insert_5fcomment',['insert_comment',['../da/da0/a00009.html#af10d060029c6bbd604a4b320224d4d72a8056710008afdd01d2678b0f1880edb2',1,'mi']]],
+  ['insert_5fdrive_5ffile',['insert_drive_file',['../da/da0/a00009.html#af10d060029c6bbd604a4b320224d4d72a1c7fa87f08f754e005f30e228cb3c74a',1,'mi']]],
+  ['insert_5femoticon',['insert_emoticon',['../da/da0/a00009.html#af10d060029c6bbd604a4b320224d4d72af7fd38d6a7d1b6ce2759727c5b4b962f',1,'mi']]],
+  ['insert_5finvitation',['insert_invitation',['../da/da0/a00009.html#af10d060029c6bbd604a4b320224d4d72afd76471c181f0d4fcd66a51c4e685a37',1,'mi']]],
+  ['insert_5flink',['insert_link',['../da/da0/a00009.html#af10d060029c6bbd604a4b320224d4d72a4598a9e76587bdf15822077bbd69bdc5',1,'mi']]],
+  ['insert_5fphoto',['insert_photo',['../da/da0/a00009.html#af10d060029c6bbd604a4b320224d4d72afb5c93e763755b27a50f86276779a25a',1,'mi']]],
+  ['invert_5fcolors',['invert_colors',['../da/da0/a00009.html#af10d060029c6bbd604a4b320224d4d72a653e7e6d2cfdacae3aab9c6a5a696ebf',1,'mi']]],
+  ['invert_5fcolors_5foff',['invert_colors_off',['../da/da0/a00009.html#af10d060029c6bbd604a4b320224d4d72a10e9a76b062709add20a8d6640ea9053',1,'mi']]],
+  ['iso',['iso',['../da/da0/a00009.html#af10d060029c6bbd604a4b320224d4d72a816ebbc484d5c0d715a61cc7830d7419',1,'mi']]]
+];
