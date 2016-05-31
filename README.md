@@ -58,7 +58,7 @@ If you want to build the library yourself, open the QMaterialIcons.pro project f
 Usage
 -----
 
-Before you start using the lib, it's necessary to load the resources. this is done by invoking QMaterialIcons#load() function. This must be done only once, and can be in your main.cpp file or at the main window constructor. Note that load must be called after the QApplication object instantiation.
+Before you start using the lib, it's necessary to load the resources. this is done by invoking QMaterialIcons::load() function. This must be done only once, and can be in your main.cpp file or at the main window constructor. Note that load must be called after the QApplication object instantiation.
 
 The example bellow shows how to load all resources inside your main routine.
 
@@ -76,7 +76,7 @@ The example bellow shows how to load all resources inside your main routine.
       return a.exec();
     }
 
-To use an icon as normal text and customize it with a stylesheet, use QMaterialIcons#getFont(), and set the icon with mi::icon.
+To use an icon as normal text and customize it with a stylesheet, use QMaterialIcons::getFont(), and set the icon with mi::icon.
 
     // This example shows how to set a label font with QMaterialIcons.
     // First, grab the font object.
@@ -89,7 +89,7 @@ To use an icon as normal text and customize it with a stylesheet, use QMaterialI
     // Depending on the label dimensions, you should resize it.
     ui->label->setFixedSize(30,30);
 
-To generate an icon, use QMaterialIcons#getIcon().
+To generate an icon, use QMaterialIcons::getIcon().
 
     // This example shows how to set a push button icon.
     // For icons, there is no need to use QChar.
