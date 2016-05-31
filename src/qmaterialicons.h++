@@ -37,8 +37,8 @@
  *
  * \bug None known.
  */
-#ifndef QMATERIALICON_H
-#define QMATERIALICON_H
+#ifndef QMATERIALICONS_H
+#define QMATERIALICONS_H
 
 #include <QColor>
 #include <QFont>
@@ -55,7 +55,7 @@ namespace mi {
 *\brief The icon enum relates the icon name to the icon value.
 */
 enum icon {
-  mi3d_rotation = 0xe84d, // Note: added prefix mi.
+  mi3d_rotation = 0xe84d, //! Note: added prefix mi.
   ac_unit = 0xeb3b,
   access_alarm = 0xe190,
   access_alarms = 0xe191,
@@ -219,7 +219,7 @@ enum icon {
   child_care = 0xeb41,
   child_friendly = 0xeb42,
   chrome_reader_mode = 0xe86d,
-  miclass = 0xe86e, // Note: added prefix mi.
+  miclass = 0xe86e, //! Note: added prefix mi.
   clear = 0xe14c,
   clear_all = 0xe0b8,
   close = 0xe5cd,
@@ -269,7 +269,7 @@ enum icon {
   data_usage = 0xe1af,
   date_range = 0xe916,
   dehaze = 0xe3c7,
-  midelete = 0xe872, // Note: added prefix mi.
+  midelete = 0xe872, //! Note: added prefix mi.
   delete_forever = 0xe92b,
   delete_sweep = 0xe16c,
   description = 0xe873,
@@ -327,7 +327,7 @@ enum icon {
   exit_to_app = 0xe879,
   expand_less = 0xe5ce,
   expand_more = 0xe5cf,
-  miexplicit = 0xe01e, // Note: added prefix mi.
+  miexplicit = 0xe01e, //! Note: added prefix mi.
   explore = 0xe87a,
   exposure = 0xe3ca,
   exposure_neg_1 = 0xe3cb,
@@ -716,7 +716,7 @@ enum icon {
   present_to_all = 0xe0df,
   print = 0xe8ad,
   priority_high = 0xe645,
-  mipublic = 0xe80b, // Note: added prefix mi.
+  mipublic = 0xe80b, //! Note: added prefix mi.
   publish = 0xe255,
   query_builder = 0xe8ae,
   question_answer = 0xe8af,
@@ -991,13 +991,13 @@ enum icon {
 }
 
 /*!
- * \brief The QMaterialIcon class handles all operations with Google's material
+ * \brief The QMaterialIcons class handles all operations with Google's material
  * icons.
  *
  * ## Overview
  *
- * The QMaterialIcon class provides the means to use Google's material icons
- * inside a Qt project. It handles the resouces and all conversions to get icons
+ * The QMaterialIcons class provides the means to use Google's material icons
+ * inside a Qt project. It handles the resources and all conversions to get icons
  * and fonts inside your Qt application.
  *
  * This class is a singleton, which means you don't have to instantiate an
@@ -1020,7 +1020,7 @@ enum icon {
  *
  * int main(int argc, char *argv[]) {
  *  QApplication a(argc, argv); // <- make sure resources are loaded after the
- *                              //  QApplication instantiation.
+ *                                //  QApplication instantiation.
  *
  *  QMaterialIcons::load(); // <- The magic happens here.
  *
@@ -1040,13 +1040,13 @@ enum icon {
  * ui->label->setFont(QMaterialIcons::getFont());
  *
  * // Set text to desired icon.
- * // Note that it is important to use a QChar to conver the wchar to text.
+ * // Note that it is important to use a QChar to convert the wchar to text.
  * ui->label->setText(QChar(mi::heart));
  *
  * // Use stylesheet to customize.
  * ui->label->setStyleSheet("color:red;font-size:30px;");
  *
- * // Depending on the label dimentions, you should resize it.
+ * // Depending on the label dimensions, you should resize it.
  * ui->label->setFixedSize(30,30);
  * \endcode
  *
@@ -1059,7 +1059,7 @@ enum icon {
  * ui->button->setIcon(QMaterialIcons::getIcon(mi::menu, Qt::black, 18));
  * \endcode
  */
-class QMaterialIcon {
+class QMaterialIcons {
 
 public:
   /*!
@@ -1114,22 +1114,22 @@ private:
   /*!
    * \brief Singleton instance.
    */
-  static QMaterialIcon *m_instance;
+  static QMaterialIcons *m_instance;
 
   /*!
-   * \brief QMaterialIcon font.
+   * \brief QMaterialIcons font.
    */
   QFont m_font;
 
   /*!
    * \brief The constructor.
    */
-  QMaterialIcon();
+  QMaterialIcons();
 
   /*!
    * \brief The destructor.
    */
-  ~QMaterialIcon();
+  ~QMaterialIcons();
 };
 
-#endif // QMATERIALICON_H
+#endif // QMATERIALICONS_H

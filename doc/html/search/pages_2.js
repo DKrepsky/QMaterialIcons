@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['qt_20material_20icon_20library',['Qt Material Icon Library',['../index.html',1,'']]]
+  ['license',['LICENSE',['../d7/d46/a00002.html',1,'']]]
 ];

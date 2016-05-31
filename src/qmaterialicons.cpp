@@ -43,24 +43,24 @@
 #include <QPainter>
 
 // Initialize the instance handler.
-QMaterialIcon *QMaterialIcon::m_instance = NULL;
+QMaterialIcons *QMaterialIcons::m_instance = NULL;
 
 // Create the singleton instance.
-void QMaterialIcon::load() {
-  Q_ASSERT_X(NULL == m_instance, "QMaterialIcon library",
+void QMaterialIcons::load() {
+  Q_ASSERT_X(NULL == m_instance, "QMaterialIcons library",
              "Library loaded twice.");
 
   if (NULL == m_instance) {
-    m_instance = new QMaterialIcon();
+    m_instance = new QMaterialIcons();
     if (NULL == m_instance) {
-      qDebug() << "Failed to alloc QMaterialIcon instance.";
+      qDebug() << "Failed to alloc QMaterialIcons instance.";
     }
   }
 }
 
 // Destroy the singleton instance.
-void QMaterialIcon::unload() {
-  Q_ASSERT_X(NULL == m_instance, "QMaterialIcon library",
+void QMaterialIcons::unload() {
+  Q_ASSERT_X(NULL == m_instance, "QMaterialIcons library",
              "Library is already unloaded.");
 
   if (NULL != m_instance) {
@@ -69,9 +69,9 @@ void QMaterialIcon::unload() {
   }
 }
 
-// Returns the QMaterialIcon font.
-QFont QMaterialIcon::getFont() {
-  Q_ASSERT_X(NULL != m_instance, "QMaterialIcon library",
+// Returns the QMaterialIcons font.
+QFont QMaterialIcons::getFont() {
+  Q_ASSERT_X(NULL != m_instance, "QMaterialIcons library",
              "Library not loaded.");
 
   // Check if resources are loaded.
@@ -83,9 +83,9 @@ QFont QMaterialIcon::getFont() {
   return m_instance->m_font;
 }
 
-// Retuns an icon pixmap.
-QPixmap QMaterialIcon::getPixmap(mi::icon icon, QColor color, int size) {
-  Q_ASSERT_X(NULL != m_instance, "QMaterialIcon library",
+// Returns an icon pixmap.
+QPixmap QMaterialIcons::getPixmap(mi::icon icon, QColor color, int size) {
+  Q_ASSERT_X(NULL != m_instance, "QMaterialIcons library",
              "Library not loaded.");
 
   // Check if resources are loaded.
@@ -109,16 +109,16 @@ QPixmap QMaterialIcon::getPixmap(mi::icon icon, QColor color, int size) {
   return pix;
 }
 
-// Retuns a QIcon icon.
-QIcon QMaterialIcon::getIcon(mi::icon icon, QColor color, int size) {
+// Returns a QIcon icon.
+QIcon QMaterialIcons::getIcon(mi::icon icon, QColor color, int size) {
 
-  // Sanity check is skiped because getPixmap will return an empty pixmap if
+  // Sanity check is skipped because getPixmap will return an empty pixmap if
   // something is wrong.
   return QIcon(getPixmap(icon, color, size));
 }
 
 // Class constructor.
-QMaterialIcon::QMaterialIcon() {
+QMaterialIcons::QMaterialIcons() {
   // Load font resource. This is necessary in libraries.
   Q_INIT_RESOURCE(font);
 
@@ -135,7 +135,7 @@ QMaterialIcon::QMaterialIcon() {
 }
 
 // Class destructor.
-QMaterialIcon::~QMaterialIcon() {
+QMaterialIcons::~QMaterialIcons() {
   // Free font resource.
   Q_CLEANUP_RESOURCE(font);
 }

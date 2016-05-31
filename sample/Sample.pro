@@ -36,11 +36,24 @@ HEADERS  += mainwindow.h++
 
 FORMS    += mainwindow.ui
 
-# This part load the library.
-unix|win32: LIBS += -L$$PWD/lib/ -lQMaterialIcons
-
+#-------------------------------------------------------------------------------
+# This part loads the library.
+#-------------------------------------------------------------------------------
+# Include search paths.
 INCLUDEPATH += $$PWD/lib
 DEPENDPATH += $$PWD/lib
 
-win32:!win32-g++: PRE_TARGETDEPS += $$PWD/lib/QMaterialIcons.lib
-else:unix|win32-g++: PRE_TARGETDEPS += $$PWD/lib/libQMaterialIcons.a
+# Select debug or release version.
+CONFIG(debug, debug|release): LIBS += -L$$PWD/lib/ -lQMaterialIconsd
+else:CONFIG(release, debug|release): LIBS += -L$$PWD/lib/ -lQMaterialIcons
+
+win32:!win32-g++ {
+  # Microsoft msvc20XX config.
+  CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/lib/QMaterialIconsd.lib
+  else:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/lib/QMaterialIcons.lib
+}
+else {
+  # GCC or mingw config.
+  CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/lib/libQMaterialIconsd.a
+  else:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/lib/libQMaterialIcons.a
+}

@@ -21,9 +21,10 @@
 # SOFTWARE.
 #/
 
-QT       -= core
+# Debug version will have "d" posfix.
+CONFIG(debug, debug|release): TARGET = QMaterialIconsd
+else:CONFIG(release, debug|release): TARGET = QMaterialIcons
 
-TARGET = QMaterialIcons
 TEMPLATE = lib
 CONFIG += staticlib
 

@@ -30,11 +30,11 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow) {
   ui->setupUi(this);
 
-  // Load QMaterialIcon library.
-  QMaterialIcon::load();
+  // Load QMaterialIcons library.
+  QMaterialIcons::load();
 
   // Add an icon to a label and change its color and size with a stylesheet.
-  ui->label->setFont(QMaterialIcon::getFont());
+  ui->label->setFont(QMaterialIcons::getFont());
   ui->label->setText(QChar(mi::face));
   ui->label->setFixedSize(30, 30);
   ui->label->setStyleSheet("color:red;font-size:30px;");
@@ -42,11 +42,11 @@ MainWindow::MainWindow(QWidget *parent)
   // Add a pixmap to a label.
   ui->label_2->setFixedSize(30, 30);
   ui->label_2->setPixmap(
-  QMaterialIcon::getPixmap(mi::access_time, Qt::gray, 30));
+  QMaterialIcons::getPixmap(mi::access_time, Qt::gray, 30));
 
   // Add an icon to a button.
   ui->pushButton->setFixedSize(30, 30);
-  ui->pushButton->setIcon(QMaterialIcon::getIcon(mi::menu, Qt::green, 30));
+  ui->pushButton->setIcon(QMaterialIcons::getIcon(mi::menu, Qt::green, 30));
 }
 
 MainWindow::~MainWindow() {
