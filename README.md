@@ -50,6 +50,16 @@ Another way is to put the files libQMaterialIcons.(lib or a) and qmaterialicons.
 
 Also, you can copy the header, source and resources to your project directory and include it directly inside your project.
 
+Using as a git submodule
+------------------------
+
+    # add QMaterialIcons as a git module
+    git submodule add https://github.com/DKrepsky/QMaterialIcons.git
+
+    # include it to your project file
+    include(QMaterialIcons/QMaterialIcons.pri)
+
+
 Build Instructions
 ------------------
 
